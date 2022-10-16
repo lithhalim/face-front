@@ -1,0 +1,30 @@
+
+@use "../../../main-style/style.scss";
+
+.movei-container-section {
+    position: fixed; right: 15px; top: 55px; max-width: 250px;
+    .movei-container {
+        display: flex; align-items: center; justify-content: flex-end;
+        margin-top: 12px;
+        img {
+            width: 120px; height: 110px;  border-radius: 5px;
+        }
+        .text-information-movei {
+            text-align: center; margin-right: 15px; text-transform: capitalize;
+            font-size: .9em;
+          //  display: none;
+        }
+        
+    }
+
+   
+
+}
+
+
+
+@media screen  and (max-width:1150px) {
+    .movei-container-section  {
+        display: none;
+    }
+}

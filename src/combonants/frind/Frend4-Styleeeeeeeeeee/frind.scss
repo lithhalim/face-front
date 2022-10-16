@@ -1,0 +1,5 @@
+.allfrindcontainer {
+    display: grid;grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 15px;text-transform: capitalize;font-weight: bold;
+    padding: 30px 150px;margin-top: 10px;
+}

@@ -1,0 +1,31 @@
+.vedioContainer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vedioContainer-section .vedio-one-section {
+  width: 50%;
+  border-radius: 5px;
+}
+
+.vedioContainer-section .vedio-two-section {
+  width: 50%;
+  border-radius: 5px;
+}
+
+.vedio-call-button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 3em;
+}
+/*# sourceMappingURL=style.css.map */

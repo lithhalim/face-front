@@ -1,0 +1,51 @@
+@use "../../main-style/style.scss";
+:root {
+  --background-color:#B1B2FF;
+  --color:#EEF1FF;
+  --hover:#D2DAFF;
+  --button:#4976dd;
+  --other:rgb(31, 31, 94);
+}
+
+.information-bar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.information-bar span {
+  background-color: var(--hover);
+  z-index: 10000000;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.information-bar li {
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: var(--button);
+}
+
+.information-bar li p {
+  font-size: 1em;
+  margin-left: 5px;
+  margin-top: 2px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  opacity: 0;
+}
+
+.information-bar li:hover p {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

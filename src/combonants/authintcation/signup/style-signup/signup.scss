@@ -1,0 +1,70 @@
+@use "../../../main-style/style.scss";
+
+
+.container-all-signup {
+    display: flex; align-items: center; width: 100vw; height: 100vh;
+    justify-content: space-around; background-color: rgba(117, 139, 173, 0.356);
+
+    .right-side {
+        div {
+            color: style.$other; font-weight: bold;
+            width: 450px; text-align: center; margin-left: 100px;
+            margin-top: 15px;
+        }
+    }
+}
+.signup-container .image-holder img {
+    width: 100%;height: 200px;border-radius: 20px;overflow: hidden;
+}
+
+.signup-container .side-section p {
+
+    font-weight: bold; color: style.$color;
+    margin-left: auto; margin-right: auto; margin-left: 40px;
+    font-size: 1.3em; margin-top: -50px;
+}
+
+
+
+.show-image-profile {
+    width:60px;height:50px; border-radius: 10px;
+        
+}
+.show-image-profile:hover {
+transform: scale(3);transition: all .5s;z-index: 15000;
+}
+
+
+@media screen and (max-width:1050) {
+    .container-all-signup {
+      .right-side{
+        width: 350px;
+        div {
+            width: 100%;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    .container-all-signup {
+      .right-side{
+        display: none;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+.reguster-text {
+    width: 100%; font-weight: bold; text-align: center;
+    color:style.$color; font-size: 1.6em;
+}

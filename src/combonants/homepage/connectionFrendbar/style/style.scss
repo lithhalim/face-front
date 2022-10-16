@@ -1,0 +1,21 @@
+@use "../../../main-style/style.scss";
+
+/* //-------------------------------connection frind---------------------------------// */
+.connection-frind {
+    position: fixed;left: 0;top: 93vh; transition: all .5s; z-index: 10000000000000000000000000;
+    width: 220px; background-color: style.$background-color; margin-right: 3px;  
+}
+.connection-frind.active {
+    position: fixed;right: 0;top: 30vh; transition: all .5s;z-index: 10000000000000000000000000;
+    width: 250px; background-color: style.$background-color; margin-right: 3px;  
+}
+
+.connection-frind .header {
+    display: flex;justify-content: space-between;cursor: pointer; text-transform: capitalize;
+    padding: 10px;background-color: style.$hover;color:style.$button;
+  border-radius:10px 10px 0px 0px;
+
+}
+.connection-frind .header p {
+    text-align: center; text-align: center; font-weight: bold; width: 100%;
+}

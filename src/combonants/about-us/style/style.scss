@@ -1,0 +1,65 @@
+@use "../../main-style/style.scss";
+.container-aboutus  {
+    padding: 50px 180px; background-color: style.$hover;
+
+    .header-section {
+        display: flex; flex-wrap: wrap; justify-content: space-between;
+        align-items: center;
+        h1 {
+            color: style.$other;
+            span {
+                color: style.$button;
+            }
+            margin-bottom: 10px;
+        }
+        p {
+            font-weight: bold; line-height: 1.4em;
+        }
+
+        .text-area {
+            flex-basis: 44%; 
+        }
+        img{ 
+            flex-basis: 44%; max-width: 100%;
+        }
+    }
+
+    .item-container {
+        margin-top: 20px;
+        .header {
+            text-align: center; width: 150px; margin-left: auto; margin-right: auto;
+            border-bottom: 5px solid style.$other; margin-bottom: 50px;
+        }
+
+        .specific-item {
+            display: grid; grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+            gap: 20px; 
+            img {
+                width: 100%; height: 200px; border-radius: 5px;
+            }
+            .Card-aboad  {
+                box-shadow: 2px 2px 2px silver;
+                h2 {
+                    padding: 5px; color: style.$other; font-size: 1.2em;
+                }
+                h4 {
+                    padding: 5px; font-size: .9em;
+                }
+                p{
+                    padding: 5px; font-size: .9em;
+                }
+
+                .icon-section {
+                    margin-top: 15px; margin-bottom: 15px;
+                    display: flex; font-size: 1.2em; align-items: center; justify-content: space-around;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .container-aboutus  {
+        padding: 50px 30px; background-color: style.$hover;
+    }    
+}

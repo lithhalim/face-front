@@ -1,0 +1,21 @@
+@use "../../../../../main-style/style.scss";
+.card1-person-information-bar {
+    position: absolute; left: -170px; top: 25px; background-color: style.$hover;  z-index: 100000000;
+    .post-bar{
+        padding: 10px; border: 1px solid style.$background-color; border-radius: 5px;
+        text-align: center; width: 200px;
+        .icon-container{
+            display: flex;  justify-content: center;margin: 5px;font-weight: 100;
+            border: 1px solid style.$background-color;transition: all .5s; font-size: 1em;
+            p {
+                font-weight: bold;
+            }
+        }
+        .icon-container:hover {
+            background-color: style.$color; 
+        }
+        .container-specific {
+            display: flex; padding: 5px;
+        }
+    }
+}

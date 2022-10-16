@@ -1,0 +1,139 @@
+@use "../../../main-style/style.scss";
+
+
+.container-all-signin{
+  display: flex; justify-content: space-around; flex-wrap: wrap; 
+  background-color:  rgba(117, 139, 173, 0.356);height: 100vh; width: 100vw; align-items: center;
+
+  .left-side{
+    div {
+      color: style.$other; font-weight: bold; margin-left: 50px;
+      margin-top: 15px;
+    }
+  }
+
+}
+
+  .image-forSignin {
+    width: 150px; height: 80px; display: block; margin-left: auto; margin-right: auto;
+    margin-top: 20px;
+  }
+  .center-signin-section {
+    border-radius: 5px;
+    background-color:style.$hover; 
+    z-index: 1000000000000; 
+    color: style.$other;
+    width: 350px; border: 1px solid style.$other;
+
+  }
+
+    
+
+  .center-signin-section form {
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .center-signin-section form .txt_field {
+    position: relative;
+    border-bottom: 2px solid style.$other;
+    margin: 30px 0;
+  }
+  .center-signin-section .txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .center-signin-section .txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .center-signin-section .txt_field span::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width:0;
+    height: 2px;
+    background: style.$other;
+    transition: .5s;
+  }
+  .center-signin-section .txt_field input:focus ~ label,
+  .center-signin-section  .txt_field input:valid ~ label {
+    top: -5px;
+    color: style.$other;
+  }
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before {
+    width: 100%;
+  }
+  .center-signin-section .pass{
+      margin: -5px 0 20px 5px;
+      color: style.$other;
+      cursor: pointer;
+  }
+  .center-signin-section .pass:hover{
+text-decoration: underline;
+  }
+  .center-signin-section input[type="submit"]
+  {
+      width: 100%;
+      height: 35px;
+      border-radius: 5px;
+      border:1px solid;
+      font-weight: 700;
+      font-size: 18px;
+      cursor: pointer;
+      outline: none;
+      background-color: rgb(75, 75, 197);
+      color: style.$hover;
+  }
+  .center-signin-section input[type="submit"]:hover
+  {
+      transition: .5s;
+  }
+  .center-signin-section .singup_link
+  {
+      margin:30px 0;
+      text-align: center;
+      font-size: 16px;
+  }
+  .center-signin-section  .singup_link a
+  {
+      text-decoration: none;
+  }
+
+  .verification {
+    padding: 5px; width: 350px; margin-left: auto; margin-right: auto; margin-bottom: 15px;
+    cursor: pointer; color: red; text-align: center;
+  }
+
+
+
+  @media screen and (max-width:1200px) {
+    .container-all-signin {
+      .left-side{
+        width: 400px;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:900px) {
+    .container-all-signin {
+      .left-side{
+        display: none;
+      }
+    }
+  }
+

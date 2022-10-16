@@ -1,0 +1,55 @@
+@use "../main-style/style.scss";
+ 
+
+.varefication-container {
+    background-color: style.$background-color;
+    height: 100vh; width: 100vw; color:black;
+}
+.verification-inner {
+    width: 400px; position: absolute; left: 50%; top: 40%; transform: translate(-50%,-50%);
+    background-color:style.$color; padding: 30px; border-radius: 10px; padding-bottom: 55px;
+
+}
+.varefication-container h3 {
+    font-size: 1.5em;  font-weight: bold; text-align: center;
+    padding: 10px; padding-bottom: 20px;
+
+}
+.varefication-container .text-specif {
+    padding: 10px;
+    padding-bottom: 20px; line-height: 4vh; font-size: .8em; color: rgb(78, 78, 78);
+    text-align: center; font-weight: bold;
+}
+.varefication-container .email {
+    width: 90%;  height: 50px;margin-bottom: 10px; background-color:style.$hover;
+    border: style.$button; padding: 10px; text-transform: capitalize;  color: black;
+    border-radius: 10px; margin-left: auto; margin-right: auto; display: block;
+}
+::placeholder{
+    color: black;
+}
+
+.varefication-container .verefy {
+    width: 100%; padding: 8px; margin-top: 20px; background-color:style.$button;
+    border:style.$button; color: style.$color; font-size: 1.5em; font-weight: bold;
+    border-radius: 10px; cursor: pointer;
+}
+.varefication-container input {
+    cursor: pointer;
+}
+
+.varefication-container .input-number {
+    width: 60px; height: 60px; margin-top: 30px; margin-bottom: 30px;
+    margin-right: 10px; margin-left: 10px; text-align: center; font-size: 2.5em; 
+    font-weight: bold; background-color: style.$hover; border: style.$hover;
+    border-radius: 10px;
+}
+.varefication-container .holder-input {
+    margin-left: auto; margin-right: auto;
+    display: flex; align-items: center; justify-content: space-around;
+}
+
+.wrong-varification  {
+    position: absolute;left: 50%; bottom: 155px; transform: translateX(-50%);
+    font-weight: bold; color: red;
+}

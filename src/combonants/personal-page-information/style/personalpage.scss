@@ -1,0 +1,108 @@
+@use "../../main-style/style.scss";
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #324e63; 
+}
+
+.main-page-holder {
+  justify-content: space-around;
+  .container-postet {
+    width: 55vw; margin-left: auto; margin-right: auto;
+  }
+  .container-information {
+    width: 55vw; margin-left: auto; margin-right: auto;
+    margin-top: 130px; margin-bottom: 20px;
+
+  }
+
+
+}
+
+.personal-page-container {
+  background-color:white;
+  margin-left: auto; margin-right: auto; 
+  border-radius: 10px; position: relative;
+
+  .personalImage {
+    border: 3px solid rgba(71,72,84,0.74); border-radius: 50%; width: 130px; height: 130px;
+    position: absolute; left: 50%; top: 0; transform: translate(-50%,-50%);
+
+  }
+
+  .collection-text {
+    text-align: center; display: flex; justify-content: space-around;
+    margin-top: 100px; padding: 30px 0px;
+    li {
+
+      div{
+        display: flex; align-items: center; justify-content: start;
+        padding: 5px 0px;
+      }
+
+    }
+
+  }
+  .button-section {
+    margin-left: auto; margin-right: auto; display: block; margin-top: 20px;
+    padding: 10px; background-color: style.$button; border: 1px solid style.$button;
+    color: style.$hover; border-radius: 5px; font-weight: bold; cursor: pointer;
+  }
+
+
+}
+
+
+
+.all-frind-container {
+  display: flex; padding: 20px 80px; gap: 5px; cursor: pointer;
+  img{
+    width: 100px; height: 100px; border-radius: 10px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .main-page-holder {
+    margin: 100px 15px;
+
+  }
+  .personal-page-container{
+    .collection-text {
+      padding: 60px 0px;
+    } 
+    
+
+  }
+  .all-frind-container{
+    padding: 20px 10px; 
+  }
+  .main-page-holder  {
+    width: 95vw;
+
+    .container-information {
+      width: 95vw;
+    }
+    .container-postet{
+      width: 95vw;
+    }
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+  .main-page-holder {
+    margin: 100px 15px;
+
+  }
+  .personal-page-container{
+    .collection-text {
+      padding: 60px 0px;
+    } 
+    
+
+  }
+}

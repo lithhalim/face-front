@@ -1,0 +1,7 @@
+@use "../../../../../main-style/style.scss";
+.card1-person-information-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/*# sourceMappingURL=style.css.map */

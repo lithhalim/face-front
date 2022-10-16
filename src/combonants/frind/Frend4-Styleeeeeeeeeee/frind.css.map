@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,OAAO,EAAE,IAAI;EAAC,qBAAqB,EAAE,qCAAmC;EACxE,GAAG,EAAE,IAAI;EAAC,cAAc,EAAE,UAAU;EAAC,WAAW,EAAE,IAAI;EACtD,OAAO,EAAE,UAAU;EAAC,UAAU,EAAE,IAAI;CACvC",
+    "sources": [
+        "frind.scss"
+    ],
+    "names": [],
+    "file": "frind.css"
+}

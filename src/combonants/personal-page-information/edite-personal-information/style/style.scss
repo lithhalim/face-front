@@ -1,0 +1,59 @@
+@use "../../../main-style/style.scss";
+
+.container-editeInformation {
+     margin-left: auto; margin-right: auto;width: 100vw; height: 92vh;
+     border-radius: 10px;  text-align: center;
+     background-image: url('../../../assest/backgroundForm.png');
+     background-position: center; background-size: cover;
+
+     .form-container {
+        margin-top: 50px; width: 40vw; padding: 50px 50px;
+     }
+
+    .container-item {
+        display: flex; align-items: center; justify-content: center;
+        .icon1-input {
+            height: 35px; width: 100%;
+            background-color: rgba(192, 192, 192, 0);
+            border: none;
+            border-bottom: 2px solid black; font-weight: bold; 
+            text-transform: capitalize; color: white; font-size: 1em;
+            ::placeholder{
+                font-weight: bold; font-size: 1.5em; 
+
+            }
+        option {
+            background-color: rgba(0, 0, 0, 0.637); font-weight: bold; 
+        }
+        optgroup{
+            background-color: rgba(0, 0, 0, 0.637); font-weight: bold; 
+
+        }
+        }
+
+        margin-bottom: 10px;
+    
+    }
+
+
+.button-custom {
+    padding: 10px 30px; background-color: black; color: white; 
+    border-radius: 5px; font-weight: bold; text-transform: capitalize;
+}
+}
+
+@media screen and (max-width:1000px) {
+    .container-editeInformation{
+        .form-container{
+            width: 70vw;
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    .container-editeInformation{
+        .form-container{
+            width: 100vw;
+        }
+    }
+}
